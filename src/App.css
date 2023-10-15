@@ -1,38 +1,125 @@
-.App {
+:root {
+  --portfolio-black: black;
+  --portfolio-radius: 12px;
+}
+
+html {
+  height: 100vh;
+  width: 100vw;
+}
+
+body {
+  padding: 5rem 10rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url("https://img.freepik.com/free-vector/abstract-simple-background_53876-99863.jpg?w=1800&t=st=1696513836~exp=1696514436~hmac=68890a143f2b19ea2e848272f0697e34413aee72b073c7853d4959ef411fb44f");
+  color: var(--portfolio-black);
+}
+
+main, footer {
+  margin-top: 5em;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 2em;
+}
+
+header > section > img {
+  max-height: 500px; 
+  width: 100%;
+  object-fit: cover;
+}
+
+h1, h2 {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h1 {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  color: var(--portfolio-black);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+#headshot, .project {
+  border-radius: var(--portfolio-radius);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.links {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 0.5rem;
+}
+
+.links img {
+  cursor: pointer;
+}
+
+.links img,
+footer img {
+  height: 1.75em;
+}
+
+#bio {
+  max-width: 50%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+#project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  justify-items: center;
+  gap: 5em;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.project {
+  border: 2px solid var(--portfolio-black);
+  width: 20rem;
+  height: 20rem;
+}
+
+.project > img {
+  height: 100px;
+  object-fit: cover;
+  width: 100%;
+  border-radius: var(--portfolio-radius) var(--portfolio-radius) 0px 0px;
+}
+
+.project-description .top-row{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+p {
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+}
+
+@media only screen and (max-width: 767px) {
+  header {
+    flex-direction: column;
+    align-items: center;
   }
-  to {
-    transform: rotate(360deg);
+
+  header .links,
+  footer .links {
+    justify-content: center;
+    gap: 1.25rem;
+  }
+
+  #bio {
+    max-width: 75%
   }
 }
+
+
