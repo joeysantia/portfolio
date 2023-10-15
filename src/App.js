@@ -1,7 +1,7 @@
 import './App.css';
-import Footer from './components/Footer';
-import Header from './components/Header';
-import ProjectGrid from './components/ProjectGrid';
+import Footer from './components/Footer.js';
+import Header from './components/Header.js';
+import ProjectGrid from './components/ProjectGrid.js';
 
 function App() {
   return (

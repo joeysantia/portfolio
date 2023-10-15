@@ -1,5 +1,5 @@
-import Project from "./Project"
-import { projects } from "../data"
+import Project from "./Project.js"
+import { projects } from "../data.js"
 
 export default function ProjectGrid() {
     

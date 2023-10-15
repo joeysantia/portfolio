@@ -1,4 +1,4 @@
-import Bio from "./Bio";
+import Bio from "./Bio.js";
 import stockPhoto from "../img/placeholders/pexels-princess-mijares-927505.jpg"
 
 export default function Header() {

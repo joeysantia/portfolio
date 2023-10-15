@@ -1,5 +1,5 @@
 import { bio, contactLinks } from "../data";
-import Links from "./Links";
+import Links from "./Links.js";
 
 export default function Bio() {
   

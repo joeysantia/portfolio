@@ -1,4 +1,4 @@
-import Links from "./Links";
+import Links from "./Links.js";
 
 const Project = ({ project }) => {
   console.log(project.img)
