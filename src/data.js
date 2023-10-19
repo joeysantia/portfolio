@@ -1,11 +1,12 @@
 import github from "./img/github.svg"
 import linkedIn from "./img/linkedin.svg"
 import liveSite from "./img/live-site.svg"
-import stockBackground from "./img/placeholders/pexels-vlada-karpovich-4050430.jpg"
 import battleship from "./img/battleship.png"
 import mugspot from "./img/mugspot.png"
 import pixelcon from "./img/pixelcon.png"
 import toodoo from "./img/toodoo.png"
+import weathervane from "./img/weathervane.png"
+import members from "./img/members.png"
 
 export const contactLinks = [
     {
@@ -87,7 +88,7 @@ export const contactLinks = [
         title: "Weathervane",
         description: "This is a weather app, which fetches information from the OpenWeatherMap One Call API. This project uses asynchronous Javascript functions to interact with the API and to validate forms (i.e. fetching errors are displayed as form validation errors).",
         img: {
-            src: stockBackground,
+            src: {weathervane},
             alt: "weathervane"
         },
         links: [
@@ -107,7 +108,7 @@ export const contactLinks = [
         title: "Members Only",
         description: "A Node.js/Express message board with user authentication, supported by PassportJS",
         img: {
-            src: stockBackground,
+            src: {members},
             alt: "members only"
         },
         links: [

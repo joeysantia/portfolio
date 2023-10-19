@@ -1,12 +1,12 @@
 import Bio from "./Bio.js";
-import stockPhoto from "../img/placeholders/pexels-princess-mijares-927505.jpg"
+import headshot from "../img/headshot.jpg"
 
 export default function Header() {
     return (
         <header>
             <section>
                 <img 
-                    src={stockPhoto}
+                    src={headshot}
                     alt="headshot"
                     id="headshot"
                 />
